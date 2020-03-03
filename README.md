@@ -1,2 +1,3 @@
 # rust-challenges
-Little rust snippets
+
+> Little rust snippets
