@@ -1,7 +1,7 @@
 mod _2020;
 
-use _2020::vowel_count;
+use _2020::hms_to_ms::past;
 
 fn main() {
-    println!("{:?}", vowel_count::get_count("abracadabra"));
+    println!("{:?}", past(1, 2, 3));
 }
