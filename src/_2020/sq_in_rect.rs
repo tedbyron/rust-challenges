@@ -1,6 +1,9 @@
+// cut a rectangle into squares and return a list of the squares or None if the
+// original rectangle is a square
+
 use std::cmp;
 
-// cut a rectangle of different length and width into squares
+#[allow(dead_code)]
 pub fn sq_in_rect(length: i32, width: i32) -> Option<Vec<i32>> {
     if length == width {
         return None;

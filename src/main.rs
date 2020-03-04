@@ -1,7 +1,7 @@
 mod _2020;
 
-use crate::_2020::sq_in_rect;
+use crate::_2020::camel_case;
 
 fn main() {
-    println!("{:?}", sq_in_rect::sq_in_rect(5i32, 3i32));
+    println!("{:?}", camel_case::camel_case(" test test !"));
 }
