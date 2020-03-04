@@ -5,3 +5,4 @@ authors = ["Teddy Byron <ted@tedbyron.com>"]
 edition = "2018"
 
 [dependencies]
+regex = "*"

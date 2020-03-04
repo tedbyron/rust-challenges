@@ -1,7 +1,7 @@
 mod _2020;
 
-use crate::_2020::min_value;
+use _2020::vowel_count;
 
 fn main() {
-    println!("{:?}", min_value::min_value(vec![4, 7, 5, 7, 2, 7, 4, 6]));
+    println!("{:?}", vowel_count::get_count("abracadabra"));
 }
