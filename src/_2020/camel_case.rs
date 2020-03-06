@@ -1,5 +1,5 @@
 // write a simple camel case function that works on strings with
-// whitespace separating ASCII characters
+// whitespace separated ASCII characters
 
 #[allow(dead_code)]
 pub fn camel_case(s: &str) -> String {

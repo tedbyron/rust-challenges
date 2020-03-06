@@ -1,7 +1,7 @@
 mod _2020;
 
-use _2020::hms_to_ms::past;
+use _2020::common_denominators::convert_fracts;
 
 fn main() {
-    println!("{:?}", past(1, 2, 3));
+    println!("{:?}", convert_fracts(vec![(69, 130), (87, 1310), (3, 4)]));
 }
