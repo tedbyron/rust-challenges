@@ -1,7 +1,10 @@
 mod _2020;
 
-use _2020::common_denominators::convert_fracts;
+use _2020::string_alpha_pos::alphabet_position;
 
 fn main() {
-    println!("{:?}", convert_fracts(vec![(69, 130), (87, 1310), (3, 4)]));
+    println!(
+        "{:?}",
+        alphabet_position("The sunset sets at twelve o' clock.")
+    );
 }
