@@ -10,6 +10,7 @@ pub mod sq_in_rect;
 pub mod string_alpha_pos;
 pub mod string_first_last;
 pub mod string_reverse;
+pub mod tortoise_race;
 pub mod triangle_of_odd;
 pub mod vowel_count;
 pub mod xo;
