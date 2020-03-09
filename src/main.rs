@@ -1,10 +1,7 @@
 mod _2020;
 
-use _2020::string_alpha_pos::alphabet_position;
+use _2020::xo::xo;
 
 fn main() {
-    println!(
-        "{:?}",
-        alphabet_position("The sunset sets at twelve o' clock.")
-    );
+    println!("{:?}", xo("The sunset sets at twelve o' clock."));
 }
