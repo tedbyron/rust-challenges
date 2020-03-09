@@ -1,3 +1,6 @@
+// given an list of vulgar fractions, return the list after the fractions have
+// been given their lowest common denominator
+
 // greatest common divisor
 fn gcd(a: i64, b: i64) -> i64 {
     if b == 0 {
