@@ -5,6 +5,7 @@ pub mod divisors;
 pub mod fib_product;
 pub mod hms_to_ms;
 pub mod min_value;
+pub mod msf_interpreter;
 pub mod pi_approx;
 pub mod sq_in_rect;
 pub mod string_alpha_pos;
