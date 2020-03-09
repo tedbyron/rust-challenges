@@ -2,6 +2,7 @@ pub mod camel_case;
 pub mod common_denominators;
 pub mod count_sheep;
 pub mod divisors;
+pub mod fib_product;
 pub mod hms_to_ms;
 pub mod min_value;
 pub mod pi_approx;

@@ -1,7 +1,7 @@
 mod _2020;
 
-use _2020::pi_approx::iter_pi;
+use _2020::fib_product::product_fib;
 
 fn main() {
-    println!("{:?}", iter_pi(0.01));
+    println!("{:?}", product_fib(4895));
 }
