@@ -9,7 +9,7 @@ fn gcd(a: i64, b: i64) -> i64 {
 
 // least common multiple
 fn lcm(a: i64, b: i64) -> i64 {
-    a.abs() / gcd(a, b) * b.abs()
+    (a * b).abs() / gcd(a, b)
 }
 
 #[allow(dead_code)]
