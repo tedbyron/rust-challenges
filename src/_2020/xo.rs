@@ -1,4 +1,4 @@
-// return whether a string has an equal number of x and o chars
+//! return whether a string has an equal number of x and o chars
 
 #[allow(dead_code)]
 pub fn xo(string: &'static str) -> bool {

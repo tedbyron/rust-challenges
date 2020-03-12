@@ -1,4 +1,4 @@
-// replace every letter in a string with its position in the alphabet
+//! replace every letter in a string with its position in the alphabet
 
 #[allow(dead_code)]
 pub fn alphabet_position(text: &str) -> String {

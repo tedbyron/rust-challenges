@@ -1,5 +1,5 @@
-// get all the divisors from 2 to an integer, or else return a string saying the
-// integer is prime
+//! get all the divisors from 2 to an integer, or else return a string saying
+//! the integer is prime
 
 #[allow(dead_code)]
 pub fn divisors(integer: u32) -> Result<Vec<u32>, String> {

@@ -1,6 +1,6 @@
-// given two velocities and a distance, how long will it take the second
-// velocity to catch up to the first; return the result as a list of hours,
-// minutes, and seconds
+//! given two velocities and a distance, how long will it take the second
+//! velocity to catch up to the first; return the result as a list of hours,
+//! minutes, and seconds
 
 #[allow(dead_code)]
 pub fn race(v1: i32, v2: i32, g: i32) -> Option<Vec<i32>> {
