@@ -1,7 +1,7 @@
 //! challenges solved in 2020
 
 pub mod camel_case;
-pub mod common_denominators;
+pub mod common_denominator;
 pub mod count_sheep;
 pub mod divisors;
 pub mod fib_product;

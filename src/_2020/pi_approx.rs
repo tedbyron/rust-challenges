@@ -2,6 +2,7 @@
 //! when the absolute value of the difference between our calculation and the
 //! Math::PI constant is less than epsilon
 
+/// rounds a floating point number to ten decimal places
 fn rnd10(f: f64) -> f64 {
     (f * 1e10).round() / 1e10
 }
