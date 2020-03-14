@@ -1,5 +1,6 @@
 //! challenges solved in 2020
 
+pub mod bf_interpreter;
 pub mod camel_case;
 pub mod common_denominator;
 pub mod count_sheep;

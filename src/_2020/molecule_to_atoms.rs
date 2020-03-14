@@ -72,6 +72,7 @@ fn get_components(s: &str) -> Result<Vec<String>, ParseError> {
     }
 }
 
+#[allow(dead_code)]
 pub fn parse_molecule(s: &str) -> Result<Molecule, ParseError> {
     let mut molecule_dups = vec![];
     let mut molecule = vec![];
