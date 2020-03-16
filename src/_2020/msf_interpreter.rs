@@ -1,4 +1,4 @@
-//! write an interpreter for the MiniStringFuck language which has two
+//! write an interpreter for the ministringfuck language which has two
 //! operators: `+` increments the memory cell and wraps to 0 at 256, and `.`
 //! outputs the ASCII value of the memory cell
 

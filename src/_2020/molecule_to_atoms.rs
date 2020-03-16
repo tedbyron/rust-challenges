@@ -40,7 +40,7 @@ fn is_valid(s: &str) -> bool {
     let mut v = vec![];
 
     for s in PAREN_PATTERN.find_iter(s).map(|m| m.as_str()) {
-        if PAREN_L_PATTERN.is_match(&s) {
+        if PAREN_L_PATTERN.is_match(s) {
             v.push(s);
         } else if let Some(p) = v.pop() {
             match (&p[..], &s[..]) {
@@ -77,7 +77,7 @@ pub fn parse_molecule(s: &str) -> Result<Molecule, ParseError> {
     let mut multiplier = 1;
     let mut multipliers = vec![1];
 
-    for (component, count) in get_components(s)?.iter().map(|s| get_multiplier(&s)).rev() {
+    for (component, count) in get_components(s)?.iter().map(|s| get_multiplier(s)).rev() {
         if PAREN_R_PATTERN.is_match(&component) {
             multipliers.push(count);
             multiplier *= count;
