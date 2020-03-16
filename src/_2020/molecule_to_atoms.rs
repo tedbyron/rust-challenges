@@ -42,19 +42,17 @@ fn is_valid(s: &str) -> bool {
     for s in PAREN_PATTERN.find_iter(s).map(|m| m.as_str()) {
         if PAREN_L_PATTERN.is_match(&s) {
             v.push(s);
-        } else {
-            if let Some(p) = v.pop() {
-                match (&p[..], &s[..]) {
-                    ("(", ")") | ("[", "]") | ("{", "}") => continue,
-                    _ => return false,
-                }
-            } else {
-                return false;
+        } else if let Some(p) = v.pop() {
+            match (&p[..], &s[..]) {
+                ("(", ")") | ("[", "]") | ("{", "}") => continue,
+                _ => return false,
             }
+        } else {
+            return false;
         }
     }
 
-    v.len() == 0
+    v.is_empty()
 }
 
 /// get the components of a chemical formula represented by a string slice
