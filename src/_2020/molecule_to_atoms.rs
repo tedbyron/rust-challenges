@@ -88,7 +88,7 @@ pub fn parse_molecule(s: &str) -> Result<Molecule, ParseError> {
         }
     }
 
-    for (element, count) in molecule_dups.into_iter() {
+    for (element, count) in molecule_dups {
         if let Some((_, n)) = molecule.iter_mut().find(|(e, _)| e == &element) {
             *n += count;
         } else {

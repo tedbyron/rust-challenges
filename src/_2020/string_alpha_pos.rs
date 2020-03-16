@@ -3,8 +3,13 @@
 #[allow(dead_code)]
 pub fn alphabet_position(text: &str) -> String {
     text.chars()
-        .filter(|c| c.is_ascii_alphabetic())
-        .map(|c| (c.to_ascii_lowercase() as u8 - 96).to_string())
+        .filter_map(|c| {
+            if c.is_ascii_alphabetic() {
+                Some((c.to_ascii_lowercase() as u8 - 96).to_string())
+            } else {
+                None
+            }
+        })
         .collect::<Vec<String>>()
         .join(" ")
 }
