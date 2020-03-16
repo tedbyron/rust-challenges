@@ -9,6 +9,7 @@ pub fn brain_luck(code: &str, input: Vec<u8>) -> Vec<u8> {
     let (mut buffer, mut output) = (vec![0u8; 3000], vec![]);
     let (mut idx, mut ptr) = (0, 0);
 
+    // move the instruction pointer to the matching loop bracket
     let walk = |i: &mut usize, d: i8| {
         let mut bracket_count = 1;
         while bracket_count != 0 {
