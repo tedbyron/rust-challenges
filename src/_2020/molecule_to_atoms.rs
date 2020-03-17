@@ -43,7 +43,7 @@ fn is_valid(s: &str) -> bool {
         if PAREN_L_PATTERN.is_match(s) {
             v.push(s);
         } else if let Some(p) = v.pop() {
-            match (&p[..], &s[..]) {
+            match (p, s) {
                 ("(", ")") | ("[", "]") | ("{", "}") => continue,
                 _ => return false,
             }
