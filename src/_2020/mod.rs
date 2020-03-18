@@ -1,5 +1,6 @@
 //! challenges solved in 2020
 
+pub mod bag_of_marbles;
 pub mod bf_interpreter;
 pub mod camel_case;
 pub mod common_denominator;

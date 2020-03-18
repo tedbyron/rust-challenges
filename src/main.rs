@@ -2,11 +2,8 @@
 
 mod _2020;
 
-use _2020::bf_interpreter::brain_luck;
+use _2020::bag_of_marbles::guess_blue;
 
 fn main() {
-    println!(
-        "{:?}",
-        brain_luck(",>,<[>[->+>+<<]>>[-<<+>>]<<<-]>>.", vec![8, 9])
-    );
+    println!("{:?}", guess_blue(5, 5, 2, 3));
 }
