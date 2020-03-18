@@ -2,8 +2,9 @@
 
 mod _2020;
 
-use _2020::bag_of_marbles::guess_blue;
+use _2020::color_choice::check_choose;
 
 fn main() {
-    println!("{:?}", guess_blue(5, 5, 2, 3));
+    println!("{:?}", check_choose(6, 4));
+    println!("{:?}", check_choose(4, 2));
 }

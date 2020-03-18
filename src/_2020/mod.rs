@@ -3,6 +3,7 @@
 pub mod bag_of_marbles;
 pub mod bf_interpreter;
 pub mod camel_case;
+pub mod color_choice;
 pub mod common_denominator;
 pub mod count_sheep;
 pub mod divisors;
