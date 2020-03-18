@@ -2,9 +2,8 @@
 
 mod _2020;
 
-use _2020::color_choice::check_choose;
+use _2020::molecule_to_atoms::parse_molecule;
 
 fn main() {
-    println!("{:?}", check_choose(6, 4));
-    println!("{:?}", check_choose(4, 2));
+    println!("{:?}", parse_molecule("[C2(NO3)3]2"));
 }
