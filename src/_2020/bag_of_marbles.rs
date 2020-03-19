@@ -3,7 +3,9 @@
 //! removed so far
 
 #[allow(dead_code)]
-pub fn guess_blue(blue_start: u32, red_start: u32, blue_pulled: u32, red_pulled: u32) -> f64 {
-    f64::from(blue_start - blue_pulled)
-        / f64::from(blue_start - blue_pulled + red_start - red_pulled)
+pub fn guess_blue(blue_start: f64, red_start: f64, blue_pulled: f64, red_pulled: f64) -> f64 {
+    let blue_left = blue_start - blue_pulled;
+    let total_left = blue_left + red_start - red_pulled;
+
+    blue_left / total_left
 }

@@ -2,8 +2,10 @@
 
 mod _2020;
 
-use _2020::optimize_distance::choose_best_sum;
+use _2020::missing_sequence::remove_nb;
 
 fn main() {
-    println!("{:?}", choose_best_sum(163, 3, &vec![50, 55, 56, 57, 58]));
+    println!("{:?}", remove_nb(26));
+    println!("{:?}", remove_nb(101));
+    println!("{:?}", remove_nb(102));
 }

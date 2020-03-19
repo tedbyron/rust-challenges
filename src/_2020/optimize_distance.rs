@@ -6,8 +6,8 @@
 use itertools::Itertools;
 
 #[allow(dead_code, clippy::cast_sign_loss)]
-pub fn choose_best_sum(t: i32, k: i32, ls: &[i32]) -> i32 {
-    Itertools::combinations(ls.iter(), k as usize)
+pub fn choose_best_sum(t: i32, k: usize, ls: &[i32]) -> i32 {
+    Itertools::combinations(ls.iter(), k)
         .map(|c| c.into_iter().sum())
         .filter(|&s| s <= t)
         .max()

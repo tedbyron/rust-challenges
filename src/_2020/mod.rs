@@ -10,6 +10,7 @@ pub mod divisors;
 pub mod fib_product;
 pub mod hms_to_ms;
 pub mod min_value;
+pub mod missing_sequence;
 pub mod molecule_to_atoms;
 pub mod msf_interpreter;
 pub mod optimize_distance;
