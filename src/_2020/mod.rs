@@ -12,6 +12,7 @@ pub mod hms_to_ms;
 pub mod min_value;
 pub mod molecule_to_atoms;
 pub mod msf_interpreter;
+pub mod optimize_distance;
 pub mod pi_approx;
 pub mod sq_in_rect;
 pub mod string_alpha_pos;

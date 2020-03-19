@@ -2,8 +2,8 @@
 
 mod _2020;
 
-use _2020::molecule_to_atoms::parse_molecule;
+use _2020::optimize_distance::choose_best_sum;
 
 fn main() {
-    println!("{:?}", parse_molecule("[C2(NO3)3]2"));
+    println!("{:?}", choose_best_sum(163, 3, &vec![50, 55, 56, 57, 58]));
 }
