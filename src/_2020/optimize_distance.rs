@@ -5,7 +5,7 @@
 
 use itertools::Itertools;
 
-#[allow(dead_code, clippy::cast_sign_loss)]
+#[allow(dead_code)]
 pub fn choose_best_sum(t: i32, k: usize, ls: &[i32]) -> i32 {
     Itertools::combinations(ls.iter(), k)
         .map(|c| c.into_iter().sum())
