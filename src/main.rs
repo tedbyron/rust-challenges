@@ -2,10 +2,8 @@
 
 mod _2020;
 
-use _2020::missing_sequence::remove_nb;
+use _2020::camel_case::camel_case;
 
 fn main() {
-    println!("{:?}", remove_nb(26));
-    println!("{:?}", remove_nb(101));
-    println!("{:?}", remove_nb(102));
+    println!("{:?}", camel_case("test STRING foR, camel case function."))
 }
