@@ -2,8 +2,11 @@
 
 mod _2020;
 
-use _2020::camel_case::camel_case;
+use _2020::pf_interpreter::interpreter;
 
 fn main() {
-    println!("{:?}", camel_case("test STRING foR, camel case function."))
+    println!(
+        "{:?}",
+        interpreter("*e*e*e*es*es*ws*ws*w*w*w*n*n*n*ssss*s*s*s*", 7, 6, 9)
+    );
 }

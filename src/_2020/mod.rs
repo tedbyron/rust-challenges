@@ -14,6 +14,7 @@ pub mod missing_sequence;
 pub mod molecule_to_atoms;
 pub mod msf_interpreter;
 pub mod optimize_distance;
+pub mod pf_interpreter;
 pub mod pi_approx;
 pub mod sq_in_rect;
 pub mod string_alpha_pos;

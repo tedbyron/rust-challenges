@@ -4,7 +4,7 @@
 
 #[allow(dead_code, clippy::cast_sign_loss)]
 pub fn brain_luck(code: &str, input: Vec<u8>) -> Vec<u8> {
-    let code = code.chars().collect::<Vec<char>>();
+    let code: Vec<char> = code.chars().collect();
     let mut input = input.into_iter();
     let (mut buffer, mut output) = (vec![0_u8; 3000], vec![]);
     let (mut idx, mut ptr) = (0, 0);
