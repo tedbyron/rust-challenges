@@ -9,6 +9,7 @@ pub mod count_sheep;
 pub mod divisors;
 pub mod fib_product;
 pub mod hms_to_ms;
+pub mod last_digit;
 pub mod min_value;
 pub mod missing_sequence;
 pub mod molecule_to_atoms;

@@ -2,11 +2,11 @@
 
 mod _2020;
 
-use _2020::pf_interpreter::interpreter;
+use _2020::last_digit::last_digit;
 
 fn main() {
     println!(
         "{:?}",
-        interpreter("*e*e*e*es*es*ws*ws*w*w*w*n*n*n*ssss*s*s*s*", 7, 6, 9)
+        last_digit("1606938044258990275541962092341162602522202993782792835301376","2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376")
     );
 }
