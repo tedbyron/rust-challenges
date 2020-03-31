@@ -15,6 +15,7 @@ pub mod min_value;
 pub mod missing_sequence;
 pub mod molecule_to_atoms;
 pub mod msf_interpreter;
+pub mod number_of_digits;
 pub mod optimize_distance;
 pub mod pf_interpreter;
 pub mod pi_approx;
