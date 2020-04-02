@@ -9,6 +9,7 @@ pub mod count_sheep;
 pub mod divisors;
 pub mod fib_product;
 pub mod hms_to_ms;
+pub mod josephus_survivor;
 pub mod largest_combination;
 pub mod last_digit;
 pub mod min_value;
