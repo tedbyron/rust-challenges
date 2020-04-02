@@ -2,17 +2,25 @@
 
 mod _2020;
 
-use _2020::josephus_survivor::josephus_survivor;
+use _2020::roboscript_syntax::highlight;
 
 fn main() {
-    assert_eq!(josephus_survivor(7, 3), 4);
-    assert_eq!(josephus_survivor(11, 19), 10);
-    assert_eq!(josephus_survivor(40, 3), 28);
-    assert_eq!(josephus_survivor(14, 2), 13);
-    assert_eq!(josephus_survivor(100, 1), 100);
-    assert_eq!(josephus_survivor(1, 300), 1);
-    assert_eq!(josephus_survivor(2, 300), 1);
-    assert_eq!(josephus_survivor(5, 300), 1);
-    assert_eq!(josephus_survivor(7, 300), 7);
-    assert_eq!(josephus_survivor(300, 300), 265);
+    macro_rules! assert_highlight {
+        ($code:expr , $expected:expr $(,)*) => {{
+            let actual = highlight($code);
+            let expected = $expected;
+            println!("Code without syntax highlighting: {}", $code);
+            println!("Your code with syntax highlighting: {}", actual);
+            println!("Expected syntax highlighting: {}", expected);
+            assert_eq!(actual, expected);
+        }};
+    }
+    assert_highlight!(
+        "F3RF5LF7",
+        r#"<span style="color: pink">F</span><span style="color: orange">3</span><span style="color: green">R</span><span style="color: pink">F</span><span style="color: orange">5</span><span style="color: red">L</span><span style="color: pink">F</span><span style="color: orange">7</span>"#,
+    );
+    assert_highlight!(
+        "FFFR345F2LL",
+        r#"<span style="color: pink">FFF</span><span style="color: green">R</span><span style="color: orange">345</span><span style="color: pink">F</span><span style="color: orange">2</span><span style="color: red">LL</span>"#,
+    );
 }
