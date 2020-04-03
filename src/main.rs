@@ -2,25 +2,33 @@
 
 mod _2020;
 
-use _2020::roboscript_syntax::highlight;
+use _2020::roboscript_interpreter::execute;
 
 fn main() {
-    macro_rules! assert_highlight {
-        ($code:expr , $expected:expr $(,)*) => {{
-            let actual = highlight($code);
+    macro_rules! expect_equal {
+        ($actual:expr, $expected:expr $(,)*) => {{
+            let actual = $actual;
             let expected = $expected;
-            println!("Code without syntax highlighting: {}", $code);
-            println!("Your code with syntax highlighting: {}", actual);
-            println!("Expected syntax highlighting: {}", expected);
-            assert_eq!(actual, expected);
+            assert_eq!(
+                actual, expected,
+                "\ngot:\n{}\n\nexpected:\n{}\n",
+                actual, expected
+            );
         }};
     }
-    assert_highlight!(
-        "F3RF5LF7",
-        r#"<span style="color: pink">F</span><span style="color: orange">3</span><span style="color: green">R</span><span style="color: pink">F</span><span style="color: orange">5</span><span style="color: red">L</span><span style="color: pink">F</span><span style="color: orange">7</span>"#,
+    expect_equal!(execute(""), "*");
+    expect_equal!(execute("FFFFF"), "******");
+    expect_equal!(
+        execute("FFFFFLFFFFFLFFFFFLFFFFFL"),
+        "******\r\n*    *\r\n*    *\r\n*    *\r\n*    *\r\n******",
     );
-    assert_highlight!(
-        "FFFR345F2LL",
-        r#"<span style="color: pink">FFF</span><span style="color: green">R</span><span style="color: orange">345</span><span style="color: pink">F</span><span style="color: orange">2</span><span style="color: red">LL</span>"#,
+    expect_equal!(
+        execute("LFFFFFRFFFRFFFRFFFFFFF"),
+        "    ****\r\n    *  *\r\n    *  *\r\n********\r\n    *   \r\n    *   ",
     );
+    expect_equal!(
+        execute("LF5RF3RF3RF7"),
+        "    ****\r\n    *  *\r\n    *  *\r\n********\r\n    *   \r\n    *   ",
+    );
+    expect_equal!(execute("RFLF7"), "*       \r\n********",);
 }
