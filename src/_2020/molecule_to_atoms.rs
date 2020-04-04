@@ -37,7 +37,7 @@ fn get_multiplier(s: &str) -> (String, usize) {
 
 /// check if a string slice has parentheses that are balanced and in order
 fn is_valid(s: &str) -> bool {
-    let mut v = vec![];
+    let mut v = Vec::new();
 
     for s in PAREN_PATTERN.find_iter(s).map(|m| m.as_str()) {
         if PAREN_L_PATTERN.is_match(s) {
@@ -72,8 +72,8 @@ fn get_components(s: &str) -> Result<Vec<String>, ParseError> {
 
 #[allow(dead_code)]
 pub fn parse_molecule(s: &str) -> Result<Molecule, ParseError> {
-    let mut molecule_dups = vec![];
-    let mut molecule = vec![];
+    let mut molecule_dups = Vec::new();
+    let mut molecule = Vec::new();
     let mut multiplier = 1;
     let mut multipliers = vec![1];
 

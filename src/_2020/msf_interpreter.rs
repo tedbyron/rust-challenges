@@ -4,16 +4,14 @@
 
 #[allow(dead_code)]
 pub fn my_first_interpreter(code: &str) -> String {
-    let mut cell: u8 = 0;
-    let mut string = String::new();
-
-    for c in code.chars() {
-        match c {
-            '+' => cell = cell.wrapping_add(1),
-            '.' => string.push(cell as char),
-            _ => (),
-        }
-    }
-
-    string
+    code.chars()
+        .fold((String::new(), 0), |(mut s, mut cell): (String, u8), c| {
+            match c {
+                '+' => cell = cell.wrapping_add(1),
+                '.' => s.push(cell as char),
+                _ => (),
+            }
+            (s, cell)
+        })
+        .0
 }

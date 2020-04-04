@@ -6,7 +6,7 @@
 pub fn brain_luck(code: &str, input: Vec<u8>) -> Vec<u8> {
     let code: Vec<char> = code.chars().collect();
     let mut input = input.into_iter();
-    let (mut buffer, mut output) = (vec![0_u8; 3000], vec![]);
+    let (mut buffer, mut output) = (vec![0_u8; 3000], Vec::new());
     let (mut idx, mut ptr) = (0, 0);
 
     // move the instruction pointer to the matching loop bracket
