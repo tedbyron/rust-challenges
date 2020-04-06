@@ -23,6 +23,7 @@ pub mod pi_approx;
 pub mod range_extraction;
 pub mod roboscript_interpreter;
 pub mod roboscript_syntax;
+pub mod rot13;
 pub mod squares_in_rectangle;
 pub mod string_alpha_pos;
 pub mod string_first_last;
