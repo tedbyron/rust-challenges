@@ -2,9 +2,8 @@
 
 mod _2020;
 
-use _2020::rot13::rot13;
+use _2020::multiplication_table::multiplication_table;
 
 fn main() {
-    assert_eq!(rot13("test"), "grfg");
-    assert_eq!(rot13("Test"), "Grfg");
+    assert_eq!(multiplication_table(2, 2), vec![vec![1, 2], vec![2, 4]]);
 }
