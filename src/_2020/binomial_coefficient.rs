@@ -1,6 +1,6 @@
 //! given `m` combinations and `n` number of available options, return `k`
 //! number of options in each combination so that every combination is unique
-//! binomial coefficient m = n! / (k! * (n - k)!)
+//! binomial coefficient `m = n! / (k! * (n - k)!)`
 
 #[allow(dead_code)]
 pub fn check_choose(m: u64, n: u64) -> Option<u64> {
