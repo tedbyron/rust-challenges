@@ -1,5 +1,5 @@
-//! given two velocities and a distance, how long will it take the second
-//! velocity to catch up to the first; return the result as a list of hours,
+//! given two velocities and a distance, return the amount of time it will it
+//! take the second velocity to catch up to the first as a list of hours,
 //! minutes, and seconds
 
 #[allow(dead_code)]

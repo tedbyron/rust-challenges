@@ -1,5 +1,5 @@
-//! for a given chemical formula represented by a string, return the number of
-//! of atoms of each element in the molecule
+//! given a chemical formula represented by a string, return the count of atoms
+//! of each element in the molecule
 
 use lazy_static::lazy_static;
 use regex::Regex;

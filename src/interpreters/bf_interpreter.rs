@@ -1,6 +1,6 @@
-//! create a function that will take brainfuck code and an input to be consumed
-//! by the `,` instruction, and return the interpreted code produced by the `.`
-//! instruction
+//! write an interpreter that will take brainfuck code and an input to be
+//! consumed by the `,` instruction, and return the interpreted code produced
+//! by the `.` instruction
 
 #[allow(dead_code, clippy::cast_sign_loss)]
 pub fn brain_luck(code: &str, input: Vec<u8>) -> Vec<u8> {

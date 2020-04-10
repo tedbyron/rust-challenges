@@ -1,5 +1,5 @@
-//! given a list of integers in increasing order, swap continuous runs of
-//! numbers with ranges and return as a string
+//! given a list of integers in increasing order, swap continuous runs of 3 or
+//! more numbers with ranges and return the result as a string
 
 #[allow(dead_code)]
 pub fn range_extraction(a: &[i32]) -> String {

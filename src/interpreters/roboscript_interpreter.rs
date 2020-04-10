@@ -1,6 +1,7 @@
-//! write an interpreter for roboscript which accepts one argument `code`, the
-//! program to be executed, and returns a string representation of the smallest
-//! 2D grid containing the full path that the robot has walked on
+//! write an interpreter for an imaginary language "roboscript" which accepts
+//! one argument `code`: the program to be executed, and returns a string
+//! representation of the smallest 2D grid containing the full path that the
+//! robot has walked on; the robot begins facing East
 //!
 //! `code` commands:
 //! -   `F` move the robot forward

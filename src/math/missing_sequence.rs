@@ -1,5 +1,6 @@
-//! given a positive integer `n`, find two numbers in the sequence `1..n` whose
-//! product is equal to the sum of the sequence without the two numbers
+//! given a positive integer `n`, return a list of tuples of numbers in the
+//! sequence `1..n` whose product is equal to the sum of the sequence without
+//! the two numbers
 
 #[allow(dead_code)]
 pub fn remove_nb(n: i64) -> Vec<(i64, i64)> {

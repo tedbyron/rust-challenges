@@ -1,4 +1,5 @@
-//! given a string, perform a ROT13 substitution cipher and return the result
+//! given a string, return the result of a ROT13 substitution cipher on the
+//! string
 
 #[allow(dead_code)]
 pub fn rot13(message: &str) -> String {

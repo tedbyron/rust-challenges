@@ -1,6 +1,6 @@
-//! create a paintfuck interpreter that accepts paintfuck code as a string,
-//! the number of iterrations to be performed before the final state of the data
-//! grid is returned, and the width and height of the data grid;
+//! write an interpreter that accepts paintfuck code as a string, the number of
+//! iterrations to be performed before the final state of the data grid is
+//! returned, and the width and height of the data grid;
 //! -   non-command characters should be ignored
 //! -   command characters should be treated as case-sensitive
 //! -   all values in the data grid should be initialized to 0

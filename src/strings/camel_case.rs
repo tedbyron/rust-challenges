@@ -1,5 +1,5 @@
-//! write a simple camel case function that works on strings with
-//! whitespace separated characters
+//! given a string of whitespace-separated characters, return a camelcase
+//! representation of the string
 
 use unicode_segmentation::UnicodeSegmentation;
 

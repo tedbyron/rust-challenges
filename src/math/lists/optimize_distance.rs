@@ -1,5 +1,5 @@
 //! given `t` max distance, `k` number of towns, and `ls` list of distances
-//! between towns, calculate the distance closest to but not exceeding `t` using
+//! between towns, return the distance closest to but not exceeding `t` using
 //! `k` of the distances in `ls`, or -1 if there are no valid combinations of
 //! distances
 

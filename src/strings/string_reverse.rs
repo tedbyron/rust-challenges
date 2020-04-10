@@ -1,4 +1,4 @@
-//! return the reverse of a string
+//! given a string, return its reverse
 
 #[allow(dead_code)]
 pub fn solution(phrase: &str) -> String {

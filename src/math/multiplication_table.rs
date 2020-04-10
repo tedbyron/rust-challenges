@@ -1,5 +1,5 @@
-//! given the number of rows and columns in a multiplication table, produce the
-//! multiplication table as a two dimensional list
+//! given a count of `rows` and `cols`, return a multiplication table with
+//! the input `rows` and `cols`
 
 #[allow(dead_code)]
 pub fn multiplication_table(rows: u32, cols: u32) -> Vec<Vec<u32>> {

@@ -1,4 +1,4 @@
-//! return the count of vowels in a string
+//! given a string, return the count of vowels in it
 
 #[allow(dead_code)]
 pub fn get_count(string: &str) -> usize {

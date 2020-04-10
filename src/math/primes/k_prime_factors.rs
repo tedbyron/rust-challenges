@@ -1,7 +1,8 @@
 //! for the function `count_kprimes`, return numbers between `start` and `end`
-//! whose count of prime factors is `k`; for the function `puzzle`, find the
-//! number of solutions for the equation `a + b + c = s`, where `a` is 1-prime,
-//! `b` is 3-prime, and `c` is 7-prime
+//! whose count of prime factors is `k`
+//!
+//! for the function `puzzle`, find the number of solutions for the equation
+//! `a + b + c = s`, where `a` is 1-prime, `b` is 3-prime, and `c` is 7-prime
 
 /// get the count of prime factors in a number
 fn prime_factor_count(n: i32) -> i32 {

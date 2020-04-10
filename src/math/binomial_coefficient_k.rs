@@ -1,6 +1,5 @@
 //! given a binomial coefficient `m` and the maximum of a fixed set of numbers
-//! `n`, solve for `k` size of subsets in `1..=n` so that every subset is
-//! unique
+//! `n`, return `k` size of subsets in `1..=n` so that every subset is unique
 //!
 //! binomial coefficient `m = n! / (k! * (n - k)!)`
 

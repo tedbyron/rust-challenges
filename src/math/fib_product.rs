@@ -1,6 +1,7 @@
-//! calculate the product of consecutive fibonacci numbers, if it equals the
-//! input argument then return the fibonacci numbers and true, if the product is
-//! greater than the input argument, return the fibonacci numbers and false
+//! given a positive integer `prod`, return two consecutive fibonacci numbers
+//! whose product is equal to `prod`; if the product equals `prod` then return
+//! the fibonacci numbers and true, if the product is greater than `prod`,
+//! return the fibonacci numbers and false
 
 #[allow(dead_code)]
 pub fn product_fib(prod: u64) -> (u64, u64, bool) {

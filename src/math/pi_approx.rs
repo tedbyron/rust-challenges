@@ -1,6 +1,7 @@
-//! use the Leibniz formula to approximate pi and stop the iterative process
-//! when the absolute value of the difference between our calculation and the
-//! `Math::PI` constant is less than epsilon
+//! given an error threshold `epsilon`, return an iteration count and an
+//! approximation of pi using the Leibniz formula, stopping the iterative
+//! process when the absolute value of the difference between the approximation
+//! and `std::f64::consts::PI` is less than epsilon
 
 /// rounds a floating point number to ten decimal places
 fn rnd10(f: f64) -> f64 {

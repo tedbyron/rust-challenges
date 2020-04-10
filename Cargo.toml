@@ -2,6 +2,7 @@
 name = "rust-challenges"
 version = "0.1.0"
 authors = ["Teddy Byron <ted@tedbyron.com>"]
+license = "MIT"
 edition = "2018"
 
 [dependencies]
