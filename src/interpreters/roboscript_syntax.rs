@@ -1,5 +1,5 @@
 //! assume an esoteric language roboscript exists and has commands `F`, `L`,
-//! `R`, digits `0-9`, and parentheses. Apply syntax highlighting to each
+//! `R`, digits `0-9`, and parentheses, apply syntax highlighting to each
 //! command, ignoring parentheses
 
 use regex::{Captures, Regex};

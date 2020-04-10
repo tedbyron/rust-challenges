@@ -1,6 +1,13 @@
 //! write an interpreter for roboscript which accepts one argument `code`, the
 //! program to be executed, and returns a string representation of the smallest
 //! 2D grid containing the full path that the robot has walked on
+//!
+//! `code` commands:
+//! -   `F` move the robot forward
+//! -   `L` rotate the robot left
+//! -   `R` rotate the robot right
+//! -   any number of digits after any of the previous commands to repeat that
+//!     command a certain number of times
 
 use regex::Regex;
 

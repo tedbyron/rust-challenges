@@ -1,7 +1,7 @@
 //! given an list of vulgar fractions, return the list after the fractions have
 //! been given their lowest common denominator
 
-// greatest common divisor
+// get the greatest common divisor of two numbers
 fn gcd(a: i64, b: i64) -> i64 {
     if b == 0 {
         a
@@ -10,7 +10,7 @@ fn gcd(a: i64, b: i64) -> i64 {
     }
 }
 
-// least common multiple
+// get the least common multiple of two numbers
 fn lcm(a: i64, b: i64) -> i64 {
     (a * b).abs() / gcd(a, b)
 }

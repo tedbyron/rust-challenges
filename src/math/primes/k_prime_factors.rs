@@ -3,6 +3,7 @@
 //! number of solutions for the equation `a + b + c = s`, where `a` is 1-prime,
 //! `b` is 3-prime, and `c` is 7-prime
 
+/// get the count of prime factors in a number
 fn prime_factor_count(n: i32) -> i32 {
     let (mut n, mut candidate, mut count) = (n, 2, 0);
     while n > 1 {

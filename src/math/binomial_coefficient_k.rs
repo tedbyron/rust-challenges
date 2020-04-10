@@ -1,5 +1,7 @@
-//! given `m` combinations and `n` number of available options, return `k`
-//! number of options in each combination so that every combination is unique
+//! given a binomial coefficient `m` and the maximum of a fixed set of numbers
+//! `n`, solve for `k` size of subsets in `1..=n` so that every subset is
+//! unique
+//!
 //! binomial coefficient `m = n! / (k! * (n - k)!)`
 
 #[allow(dead_code)]

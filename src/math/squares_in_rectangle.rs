@@ -1,5 +1,6 @@
-//! cut a rectangle into squares and return a list of the squares arranged from
-//! largest to smallest, or None if the original rectangle is a square
+//! given a rectangle's length and width, cut the rectangle into squares and
+//! return a list of the squares arranged from largest to smallest, or None if
+//! the original rectangle is a square
 
 use std::cmp;
 
