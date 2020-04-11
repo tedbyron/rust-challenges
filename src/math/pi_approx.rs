@@ -10,8 +10,7 @@ fn rnd10(f: f64) -> f64 {
 
 #[allow(dead_code)]
 pub fn iter_pi(epsilon: f64) -> (i32, f64) {
-    let mut count = 0;
-    let mut pi_approx = 0.0;
+    let (mut count, mut pi_approx) = (0, 0.0);
 
     while (pi_approx - std::f64::consts::PI).abs() >= epsilon {
         if count % 2 == 0 {
@@ -21,5 +20,6 @@ pub fn iter_pi(epsilon: f64) -> (i32, f64) {
         }
         count += 1;
     }
+
     (count, rnd10(pi_approx))
 }

@@ -8,7 +8,7 @@ pub fn my_first_interpreter(code: &str) -> String {
         .fold((String::new(), 0), |(mut s, mut cell): (String, u8), c| {
             match c {
                 '+' => cell = cell.wrapping_add(1),
-                '.' => s.push(cell as char),
+                '.' => s.push(char::from(cell)),
                 _ => (),
             }
             (s, cell)
