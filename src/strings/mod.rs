@@ -1,5 +1,6 @@
 //! solutions to problems involving strings;
 
+pub mod alternating_case;
 pub mod camel_case;
 pub mod count_sheep;
 pub mod molecule_to_atoms;
