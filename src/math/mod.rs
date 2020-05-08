@@ -4,6 +4,7 @@ pub mod lists;
 pub mod primes;
 
 pub mod bag_of_marbles;
+pub mod bin_to_dec;
 pub mod binomial_coefficient_k;
 pub mod divisors;
 pub mod exponent_last_digit;
