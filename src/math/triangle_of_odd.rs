@@ -6,7 +6,7 @@
 //!                13    15    17    19
 //!             21    23    25    27    29
 
-#[allow(dead_code)]
+#[allow(dead_code, clippy::missing_const_for_fn)]
 pub fn row_sum_odd_numbers(n: i64) -> i64 {
     n.pow(3)
 }
