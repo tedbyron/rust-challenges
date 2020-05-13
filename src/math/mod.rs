@@ -10,7 +10,6 @@ pub mod count_red_beads;
 pub mod divisors;
 pub mod exponent_last_digit;
 pub mod fib_product;
-pub mod hms_to_ms;
 pub mod josephus_survivor;
 pub mod largest_combination;
 pub mod missing_sequence;

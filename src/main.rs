@@ -1,5 +1,6 @@
 #![warn(clippy::all, clippy::pedantic, clippy::nursery)]
 
+mod datetime;
 mod interpreters;
 mod math;
 mod strings;

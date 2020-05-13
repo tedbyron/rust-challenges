@@ -6,6 +6,7 @@ license = "MIT"
 edition = "2018"
 
 [dependencies]
+chrono = "0"
 itertools = "0"
 lazy_static = "1"
 regex = "1"
