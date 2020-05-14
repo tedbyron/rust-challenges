@@ -5,6 +5,7 @@ pub mod beer_song;
 pub mod bob;
 pub mod camel_case;
 pub mod count_sheep;
+pub mod matching_brackets;
 pub mod molecule_to_atoms;
 pub mod proverb;
 pub mod raindrops;
