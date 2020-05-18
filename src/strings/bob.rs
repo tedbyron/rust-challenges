@@ -1,4 +1,5 @@
-//! given a message, return Bob's lazy responses
+//! given a message, return Bob's lazy responses to questions, yelling, yelling
+//! questions, silence, or anything else
 
 #[allow(dead_code)]
 pub fn reply(message: &str) -> &str {
