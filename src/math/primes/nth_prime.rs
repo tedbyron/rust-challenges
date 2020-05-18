@@ -17,5 +17,5 @@ pub fn nth(n: usize) -> u32 {
                 .all(|y| x % y != 0)
         })
         .nth(n)
-        .expect("`n` should be greater than or equal to 2")
+        .unwrap()
 }
