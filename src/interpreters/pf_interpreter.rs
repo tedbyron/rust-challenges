@@ -19,9 +19,9 @@ pub fn interpreter(code: &str, iterations: usize, width: usize, height: usize) -
         let mut bracket_count = 1;
         while bracket_count != 0 {
             *i = i.wrapping_add(d as usize);
-            bracket_count += match code[*i] {
-                '[' => d,
-                ']' => -d,
+            bracket_count += match code.get(*i) {
+                Some('[') => d,
+                Some(']') => -d,
                 _ => 0,
             };
         }
@@ -29,18 +29,18 @@ pub fn interpreter(code: &str, iterations: usize, width: usize, height: usize) -
 
     while idx < code.len() && iter_count < iterations {
         iter_count += 1;
-        match code[idx] {
-            'n' => ptr_row = (ptr_row + height - 1) % height,
-            'e' => ptr_col = (ptr_col + 1) % width,
-            's' => ptr_row = (ptr_row + 1) % height,
-            'w' => ptr_col = (ptr_col + width - 1) % width,
-            '*' => data[ptr_row][ptr_col] ^= true,
-            '[' => {
+        match code.get(idx) {
+            Some('n') => ptr_row = (ptr_row + height - 1) % height,
+            Some('e') => ptr_col = (ptr_col + 1) % width,
+            Some('s') => ptr_row = (ptr_row + 1) % height,
+            Some('w') => ptr_col = (ptr_col + width - 1) % width,
+            Some('*') => data[ptr_row][ptr_col] ^= true,
+            Some('[') => {
                 if !data[ptr_row][ptr_col] {
                     walk(&mut idx, 1);
                 }
             }
-            ']' => {
+            Some(']') => {
                 if data[ptr_row][ptr_col] {
                     walk(&mut idx, -1);
                 }

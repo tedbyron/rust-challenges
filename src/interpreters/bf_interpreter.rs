@@ -14,28 +14,28 @@ pub fn brain_luck(code: &str, input: Vec<u8>) -> Vec<u8> {
         let mut bracket_count = 1;
         while bracket_count != 0 {
             *i = i.wrapping_add(d as usize);
-            bracket_count += match code[*i] {
-                '[' => d,
-                ']' => -d,
+            bracket_count += match code.get(*i) {
+                Some('[') => d,
+                Some(']') => -d,
                 _ => 0,
             };
         }
     };
 
     while idx < code.len() {
-        match code[idx] {
-            '>' => ptr += 1,
-            '<' => ptr -= 1,
-            '+' => buffer[ptr] = buffer[ptr].wrapping_add(1),
-            '-' => buffer[ptr] = buffer[ptr].wrapping_sub(1),
-            '.' => output.push(buffer[ptr]),
-            ',' => buffer[ptr] = input.next().unwrap(),
-            '[' => {
+        match code.get(idx) {
+            Some('>') => ptr += 1,
+            Some('<') => ptr -= 1,
+            Some('+') => buffer[ptr] = buffer[ptr].wrapping_add(1),
+            Some('-') => buffer[ptr] = buffer[ptr].wrapping_sub(1),
+            Some('.') => output.push(buffer[ptr]),
+            Some(',') => buffer[ptr] = input.next().unwrap(),
+            Some('[') => {
                 if buffer[ptr] == 0 {
                     walk(&mut idx, 1);
                 }
             }
-            ']' => {
+            Some(']') => {
                 if buffer[ptr] != 0 {
                     walk(&mut idx, -1);
                 }
